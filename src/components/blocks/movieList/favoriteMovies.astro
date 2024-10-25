@@ -1,0 +1,250 @@
+---
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+import moviesData from './favoriteMovies.json'
+---
+
+<Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900 pb-10">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<h1>My <strong>Favorite Movies</strong> Ranked</h1>
+			<p class="pb-0 text-lg">Starting with the best...</p>
+
+			<div class="movie-grid">
+				{
+					moviesData.map((movie, index) => (
+						<div key={index} class="movie-wrapper">
+							{' '}
+							{/* New wrapper div */}
+							<div class="number">#{index + 1}</div> {/* Moved number here */}
+							<div class="movie-card" data-expanded="false">
+								<div class="movie-content">
+									<a href={movie.pageUrl} target="_blank" class="movie-link">
+										<h2 class="movie-title">{movie.title}</h2>
+									</a>
+									<div class="movie-year">{movie.year}</div>
+									<a href={movie.pageUrl} target="_blank" class="movie-link">
+										<img src={movie.imageUrl} alt={movie.title} class="movie-cover" />
+									</a>
+									{/* Movie description */}
+									<p class="movie-description collapsed">{movie.description}</p>
+									<button class="expand-button" style="display: none;">
+										Expand
+									</button>
+								</div>
+							</div>
+						</div>
+					))
+				}
+			</div>
+		</Col>
+	</Row>
+
+	<!-- Script for toggling description expansion -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const cards = document.querySelectorAll('.movie-card')
+
+			cards.forEach((card) => {
+				const button = card.querySelector('.expand-button')
+				const description = card.querySelector('.movie-description')
+				const title = card.querySelector('.movie-title')
+				const originalHeight = card.offsetHeight
+
+				const checkDescriptionOverflow = () => {
+					const isOverflowing = description.scrollHeight > description.clientHeight
+					button.style.display = isOverflowing ? 'block' : 'none' // Show button only if overflowing
+
+					// Set the clamp based on the title's wrapping status
+					const titleLineCount = Math.ceil(
+						title.offsetHeight / parseFloat(getComputedStyle(title).lineHeight)
+					)
+					const clampValue = titleLineCount > 1 ? 4 : 5 // If title wraps, set to 4 lines, else 5
+					description.style.setProperty('--line-clamp', clampValue)
+				}
+
+				checkDescriptionOverflow() // Initial check on page load
+
+				button.addEventListener('click', () => {
+					const isExpanded = card.getAttribute('data-expanded') === 'true'
+
+					// Toggle the expanded state
+					if (isExpanded) {
+						card.setAttribute('data-expanded', 'false')
+						description.classList.add('collapsed')
+						description.classList.remove('expanded')
+						button.textContent = 'Expand'
+						card.style.height = `${originalHeight}px` // Reset height
+					} else {
+						card.setAttribute('data-expanded', 'true')
+						description.classList.remove('collapsed')
+						description.classList.add('expanded')
+						button.textContent = 'Show Less'
+
+						// Dynamically adjust card height to the new content height
+						card.style.height = `${card.scrollHeight}px` // Set height to content height
+					}
+				})
+			})
+		})
+
+		let lastOpenedTab
+
+		function openLink(url) {
+			// Check if a tab is already opened
+			if (lastOpenedTab && !lastOpenedTab.closed) {
+				lastOpenedTab.location.href = url // Change the URL of the last opened tab
+				lastOpenedTab.focus() // Bring the tab into focus
+			} else {
+				lastOpenedTab = window.open(url, '_blank') // Open a new tab
+			}
+		}
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const links = document.querySelectorAll('.movie-link')
+			links.forEach((link) => {
+				link.addEventListener('click', (event) => {
+					event.preventDefault() // Prevent default anchor behavior
+					const url = event.currentTarget.getAttribute('href') // Get the link URL
+					openLink(url) // Call the openLink function
+				})
+			})
+		})
+	</script>
+</Section>
+
+<style>
+	/* Flexbox grid for movie cards */
+	.movie-grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px; /* Space between cards */
+		padding: 20px 0;
+	}
+
+	/* Individual movie card */
+	.movie-card {
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		width: 310px;
+		height: 655px; /* This should be adjusted based on the collapsed state */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+		position: relative; /* Needed for number positioning */
+		transition: box-shadow 0.2s ease;
+	}
+
+	.movie-card:hover {
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+	}
+
+	/* Positioning the rank number */
+	.movie-wrapper {
+		position: relative; /* Allows absolute positioning for number */
+	}
+
+	.number {
+		font-size: 1rem;
+		color: #fff;
+		position: absolute;
+		top: -12px;
+		left: -10px;
+		background-color: #e2187d;
+		border-radius: 5px; /* Rounded corners */
+		padding: 0px 5px; /* Padding for the number */
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		z-index: 10; /* Ensure it is on top of the image */
+	}
+
+	.movie-content {
+		text-align: center;
+	}
+
+	/* Movie cover */
+	.movie-cover {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+		transition:
+			transform 0.3s ease,
+			filter 0.3s ease; /* Added filter transition */
+		margin-top: 15px;
+	}
+
+	.movie-cover:hover {
+		filter: brightness(1.1); /* Slightly brighten on hover */
+
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		/* transform: scale(1.05); */ /* Slight scale effect on hover */
+	}
+
+	/* Movie title */
+	.movie-title {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 1.25rem;
+		color: #e2187d;
+		font-weight: bold;
+		transition: color 0.2s ease;
+	}
+
+	.movie-year {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.movie-title:hover {
+		text-decoration: underline;
+		color: #c4166b;
+	}
+
+	/* Movie description */
+	.movie-description {
+		margin-top: 10px;
+		margin-bottom: 5px;
+		font-size: 0.9rem;
+		color: #666;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+		display: -webkit-box;
+		-webkit-line-clamp: var(--line-clamp, 5); /* Use the CSS variable */
+		-webkit-box-orient: vertical;
+	}
+
+	/* Expanded and collapsed states for description */
+	.movie-description.collapsed {
+		overflow: hidden;
+		max-height: calc(var(--line-clamp, 5) * 1.2em); /* Adjust the height based on line clamp */
+	}
+
+	.movie-description.expanded {
+		overflow: visible;
+		-webkit-line-clamp: none; /* Remove line clamp */
+		-webkit-box-orient: unset;
+		max-height: none; /* Remove height limit for expanded state */
+	}
+
+	/* Expand button */
+	.expand-button {
+		background-color: transparent;
+		border: none;
+		color: #e2187d;
+		cursor: pointer;
+		font-size: 0.9rem;
+		margin-top: 0px;
+		width: -webkit-fill-available;
+		transition: color 0.2s ease; /* Added transition for hover effect */
+	}
+
+	.expand-button:hover {
+		text-decoration: underline;
+		color: #c4166b; /* Change color on hover */
+	}
+</style>
