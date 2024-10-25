@@ -15,10 +15,8 @@ import moviesData from './favoriteMovies.json'
 			<div class="movie-grid">
 				{
 					moviesData.map((movie, index) => (
-						<div key={index} class="movie-wrapper">
-							{' '}
-							{/* New wrapper div */}
-							<div class="number">#{index + 1}</div> {/* Moved number here */}
+						<div class="movie-wrapper" key={`movie-${index}`}>
+							<div class="number">#{index + 1}</div>
 							<div class="movie-card" data-expanded="false">
 								<div class="movie-content">
 									<a href={movie.pageUrl} target="_blank" class="movie-link">
@@ -28,7 +26,6 @@ import moviesData from './favoriteMovies.json'
 									<a href={movie.pageUrl} target="_blank" class="movie-link">
 										<img src={movie.imageUrl} alt={movie.title} class="movie-cover" />
 									</a>
-									{/* Movie description */}
 									<p class="movie-description collapsed">{movie.description}</p>
 									<button class="expand-button" style="display: none;">
 										Expand
@@ -42,7 +39,6 @@ import moviesData from './favoriteMovies.json'
 		</Col>
 	</Row>
 
-	<!-- Script for toggling description expansion -->
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 			const cards = document.querySelectorAll('.movie-card')
@@ -54,51 +50,48 @@ import moviesData from './favoriteMovies.json'
 				const originalHeight = card.offsetHeight
 
 				const checkDescriptionOverflow = () => {
-					const isOverflowing = description.scrollHeight > description.clientHeight
-					button.style.display = isOverflowing ? 'block' : 'none' // Show button only if overflowing
+					if (description) {
+						const isOverflowing = description.scrollHeight > description.clientHeight
+						if (button) button.style.display = isOverflowing ? 'block' : 'none'
 
-					// Set the clamp based on the title's wrapping status
-					const titleLineCount = Math.ceil(
-						title.offsetHeight / parseFloat(getComputedStyle(title).lineHeight)
-					)
-					const clampValue = titleLineCount > 1 ? 4 : 5 // If title wraps, set to 4 lines, else 5
-					description.style.setProperty('--line-clamp', clampValue)
+						const titleLineCount = Math.ceil(
+							title.offsetHeight / parseFloat(getComputedStyle(title).lineHeight)
+						)
+						const clampValue = titleLineCount > 1 ? 4 : 5
+						description.style.setProperty('--line-clamp', clampValue)
+					}
 				}
 
-				checkDescriptionOverflow() // Initial check on page load
+				checkDescriptionOverflow()
 
-				button.addEventListener('click', () => {
+				button?.addEventListener('click', () => {
 					const isExpanded = card.getAttribute('data-expanded') === 'true'
 
-					// Toggle the expanded state
 					if (isExpanded) {
 						card.setAttribute('data-expanded', 'false')
-						description.classList.add('collapsed')
-						description.classList.remove('expanded')
+						description?.classList.add('collapsed')
+						description?.classList.remove('expanded')
 						button.textContent = 'Expand'
-						card.style.height = `${originalHeight}px` // Reset height
+						card.style.height = `${originalHeight}px`
 					} else {
 						card.setAttribute('data-expanded', 'true')
-						description.classList.remove('collapsed')
-						description.classList.add('expanded')
+						description?.classList.remove('collapsed')
+						description?.classList.add('expanded')
 						button.textContent = 'Show Less'
-
-						// Dynamically adjust card height to the new content height
-						card.style.height = `${card.scrollHeight}px` // Set height to content height
+						card.style.height = `${card.scrollHeight}px`
 					}
 				})
 			})
 		})
 
-		let lastOpenedTab
+		let lastOpenedTab: Window | null = null
 
-		function openLink(url) {
-			// Check if a tab is already opened
+		function openLink(url: string) {
 			if (lastOpenedTab && !lastOpenedTab.closed) {
-				lastOpenedTab.location.href = url // Change the URL of the last opened tab
-				lastOpenedTab.focus() // Bring the tab into focus
+				lastOpenedTab.location.href = url
+				lastOpenedTab.focus()
 			} else {
-				lastOpenedTab = window.open(url, '_blank') // Open a new tab
+				lastOpenedTab = window.open(url, '_blank')
 			}
 		}
 
@@ -106,9 +99,9 @@ import moviesData from './favoriteMovies.json'
 			const links = document.querySelectorAll('.movie-link')
 			links.forEach((link) => {
 				link.addEventListener('click', (event) => {
-					event.preventDefault() // Prevent default anchor behavior
-					const url = event.currentTarget.getAttribute('href') // Get the link URL
-					openLink(url) // Call the openLink function
+					event.preventDefault()
+					const url = (event.currentTarget as HTMLAnchorElement)?.getAttribute('href')
+					if (url) openLink(url)
 				})
 			})
 		})
@@ -121,35 +114,29 @@ import moviesData from './favoriteMovies.json'
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 20px; /* Space between cards */
+		gap: 20px;
 		padding: 20px 0;
 	}
-
-	/* Individual movie card */
 	.movie-card {
 		background-color: #fff;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		overflow: hidden;
 		width: 310px;
-		height: 655px; /* This should be adjusted based on the collapsed state */
+		height: 655px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 15px;
-		position: relative; /* Needed for number positioning */
+		position: relative;
 		transition: box-shadow 0.2s ease;
 	}
-
 	.movie-card:hover {
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	}
-
-	/* Positioning the rank number */
 	.movie-wrapper {
-		position: relative; /* Allows absolute positioning for number */
+		position: relative;
 	}
-
 	.number {
 		font-size: 1rem;
 		color: #fff;
@@ -157,35 +144,26 @@ import moviesData from './favoriteMovies.json'
 		top: -12px;
 		left: -10px;
 		background-color: #e2187d;
-		border-radius: 5px; /* Rounded corners */
-		padding: 0px 5px; /* Padding for the number */
+		border-radius: 5px;
+		padding: 0px 5px;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		z-index: 10; /* Ensure it is on top of the image */
+		z-index: 10;
 	}
-
 	.movie-content {
 		text-align: center;
 	}
-
-	/* Movie cover */
 	.movie-cover {
 		width: 100%;
 		height: auto;
 		border-radius: 8px;
 		transition:
 			transform 0.3s ease,
-			filter 0.3s ease; /* Added filter transition */
+			filter 0.3s ease;
 		margin-top: 15px;
 	}
-
 	.movie-cover:hover {
-		filter: brightness(1.1); /* Slightly brighten on hover */
-
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-		/* transform: scale(1.05); */ /* Slight scale effect on hover */
+		filter: brightness(1.1);
 	}
-
-	/* Movie title */
 	.movie-title {
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -194,18 +172,10 @@ import moviesData from './favoriteMovies.json'
 		font-weight: bold;
 		transition: color 0.2s ease;
 	}
-
-	.movie-year {
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
 	.movie-title:hover {
 		text-decoration: underline;
 		color: #c4166b;
 	}
-
-	/* Movie description */
 	.movie-description {
 		margin-top: 10px;
 		margin-bottom: 5px;
@@ -214,24 +184,19 @@ import moviesData from './favoriteMovies.json'
 		overflow: hidden;
 		transition: max-height 0.3s ease;
 		display: -webkit-box;
-		-webkit-line-clamp: var(--line-clamp, 5); /* Use the CSS variable */
+		-webkit-line-clamp: var(--line-clamp, 5);
 		-webkit-box-orient: vertical;
 	}
-
-	/* Expanded and collapsed states for description */
 	.movie-description.collapsed {
 		overflow: hidden;
-		max-height: calc(var(--line-clamp, 5) * 1.2em); /* Adjust the height based on line clamp */
+		max-height: calc(var(--line-clamp, 5) * 1.2em);
 	}
-
 	.movie-description.expanded {
 		overflow: visible;
-		-webkit-line-clamp: none; /* Remove line clamp */
+		-webkit-line-clamp: none;
 		-webkit-box-orient: unset;
-		max-height: none; /* Remove height limit for expanded state */
+		max-height: none;
 	}
-
-	/* Expand button */
 	.expand-button {
 		background-color: transparent;
 		border: none;
@@ -240,11 +205,10 @@ import moviesData from './favoriteMovies.json'
 		font-size: 0.9rem;
 		margin-top: 0px;
 		width: -webkit-fill-available;
-		transition: color 0.2s ease; /* Added transition for hover effect */
+		transition: color 0.2s ease;
 	}
-
 	.expand-button:hover {
 		text-decoration: underline;
-		color: #c4166b; /* Change color on hover */
+		color: #c4166b;
 	}
 </style>
