@@ -15,7 +15,7 @@ import moviesData from './favoriteMovies.json'
 			<div class="movie-grid">
 				{
 					moviesData.map((movie, index) => (
-						<div class="movie-wrapper" key={`movie-${index}`}>
+						<div class="movie-wrapper">
 							<div class="number">#{index + 1}</div>
 							<div class="movie-card" data-expanded="false">
 								<div class="movie-content">
@@ -45,20 +45,22 @@ import moviesData from './favoriteMovies.json'
 
 			cards.forEach((card) => {
 				const button = card.querySelector('.expand-button')
-				const description = card.querySelector('.movie-description')
-				const title = card.querySelector('.movie-title')
-				const originalHeight = card.offsetHeight
+				const description = card.querySelector('.movie-description') as HTMLElement
+				const title = card.querySelector('.movie-title') as HTMLElement
+				const originalHeight = card instanceof HTMLElement ? card.offsetHeight : 0
 
 				const checkDescriptionOverflow = () => {
 					if (description) {
 						const isOverflowing = description.scrollHeight > description.clientHeight
 						if (button) button.style.display = isOverflowing ? 'block' : 'none'
 
-						const titleLineCount = Math.ceil(
-							title.offsetHeight / parseFloat(getComputedStyle(title).lineHeight)
-						)
-						const clampValue = titleLineCount > 1 ? 4 : 5
-						description.style.setProperty('--line-clamp', clampValue)
+						if (title) {
+							const titleLineCount = Math.ceil(
+								title.offsetHeight / parseFloat(getComputedStyle(title).lineHeight)
+							)
+							const clampValue = titleLineCount > 1 ? 4 : 5
+							description.style.setProperty('--line-clamp', clampValue.toString())
+						}
 					}
 				}
 
@@ -72,13 +74,13 @@ import moviesData from './favoriteMovies.json'
 						description?.classList.add('collapsed')
 						description?.classList.remove('expanded')
 						button.textContent = 'Expand'
-						card.style.height = `${originalHeight}px`
+						if (card instanceof HTMLElement) card.style.height = `${originalHeight}px`
 					} else {
 						card.setAttribute('data-expanded', 'true')
 						description?.classList.remove('collapsed')
 						description?.classList.add('expanded')
 						button.textContent = 'Show Less'
-						card.style.height = `${card.scrollHeight}px`
+						if (card instanceof HTMLElement) card.style.height = `${card.scrollHeight}px`
 					}
 				})
 			})
