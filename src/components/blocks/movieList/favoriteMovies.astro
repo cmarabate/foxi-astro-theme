@@ -52,7 +52,8 @@ import moviesData from './favoriteMovies.json'
 				const checkDescriptionOverflow = () => {
 					if (description) {
 						const isOverflowing = description.scrollHeight > description.clientHeight
-						if (button) button.style.display = isOverflowing ? 'block' : 'none'
+						if (button instanceof HTMLElement)
+							button.style.display = isOverflowing ? 'block' : 'none'
 
 						if (title) {
 							const titleLineCount = Math.ceil(
