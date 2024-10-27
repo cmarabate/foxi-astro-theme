@@ -44,6 +44,7 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 										<h2 class="movie-title">{movie.title}</h2>
 									</a>
 									<div class="movie-year">{movie.year}</div>
+									<div class="movie-genres">{movie.genres ? movie.genres.join(', ') : 'N/A'}</div>
 									<a href={movie.pageUrl} target="_blank" class="movie-link">
 										<img src={movie.imageUrl} alt={movie.title} class="movie-cover" />
 									</a>
@@ -282,5 +283,12 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 	}
 	.genre-filters > label {
 		margin-right: 15px;
+	}
+
+	.movie-genres {
+		font-size: 0.6rem;
+		overflow-x: hidden;
+		width: 100%;
+		white-space: nowrap;
 	}
 </style>
