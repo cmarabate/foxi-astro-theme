@@ -1,8 +1,12 @@
 ---
+// Import necessary components and movie data
 import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 import moviesData from './favoriteMovies.json'
+
+// Extract unique genres from moviesData
+const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genres)))
 ---
 
 <Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900 pb-10">
@@ -12,10 +16,22 @@ import moviesData from './favoriteMovies.json'
 			<h1>My <strong>Favorite Movies</strong> Ranked</h1>
 			<p class="pb-0 text-lg">Starting with the best...</p>
 
+			<!-- Genre Filters -->
+			<div class="genre-filters">
+				{
+					uniqueGenres.map((genre) => (
+						<label>
+							<input type="checkbox" value={genre} class="genre-checkbox" />
+							{genre}
+						</label>
+					))
+				}
+			</div>
+
 			<div class="movie-grid">
 				{
 					moviesData.map((movie, index) => (
-						<div class="movie-wrapper">
+						<div class="movie-wrapper" data-genres={movie.genres.join(', ')}>
 							<div class="number">#{index + 1}</div>
 							<div class="movie-card" data-expanded="false">
 								<div class="movie-content">
@@ -42,7 +58,34 @@ import moviesData from './favoriteMovies.json'
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 			const cards = document.querySelectorAll('.movie-card')
+			const genreCheckboxes = document.querySelectorAll('.genre-checkbox')
 
+			// Function to filter movies based on selected genres
+			const filterMovies = () => {
+				const selectedGenres = Array.from(genreCheckboxes)
+					.filter((checkbox) => checkbox.checked)
+					.map((checkbox) => checkbox.value)
+
+				cards.forEach((card) => {
+					const movieGenres = card.closest('.movie-wrapper').getAttribute('data-genres').split(', ')
+					const isVisible =
+						selectedGenres.length === 0 ||
+						selectedGenres.every((genre) => movieGenres.includes(genre))
+
+					if (isVisible) {
+						card.closest('.movie-wrapper').style.display = 'block'
+					} else {
+						card.closest('.movie-wrapper').style.display = 'none'
+					}
+				})
+			}
+
+			// Add event listeners to checkboxes
+			genreCheckboxes.forEach((checkbox) => {
+				checkbox.addEventListener('change', filterMovies)
+			})
+
+			// Existing code for expand/collapse functionality
 			cards.forEach((card) => {
 				const button = card.querySelector('.expand-button')
 				const description = card.querySelector('.movie-description') as HTMLElement
@@ -213,5 +256,24 @@ import moviesData from './favoriteMovies.json'
 	.expand-button:hover {
 		text-decoration: underline;
 		color: #c4166b;
+	}
+
+	/* Add styles for genre filter */
+	#genre-filter {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	#checkboxes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+		margin-top: 10px;
+	}
+	.genre-checkbox {
+		cursor: pointer;
+	}
+	.genre-filters > label {
+		margin-right: 15px;
 	}
 </style>
