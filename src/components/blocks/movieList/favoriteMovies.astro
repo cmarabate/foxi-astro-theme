@@ -63,8 +63,8 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 			// Function to filter movies based on selected genres
 			const filterMovies = () => {
 				const selectedGenres = Array.from(genreCheckboxes)
-					.filter((checkbox) => checkbox.checked)
-					.map((checkbox) => checkbox.value)
+					.filter((checkbox) => (checkbox as HTMLInputElement).checked)
+					.map((checkbox) => (checkbox as HTMLInputElement).value)
 
 				cards.forEach((card) => {
 					const movieWrapper = card.closest('.movie-wrapper') as HTMLElement // Assert as HTMLElement
@@ -160,8 +160,8 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 			// Function to filter movies based on selected genres
 			const filterMovies = () => {
 				const selectedGenres = Array.from(genreCheckboxes)
-					.filter((checkbox) => checkbox.checked)
-					.map((checkbox) => checkbox.value)
+					.filter((checkbox) => (checkbox as HTMLInputElement).checked)
+					.map((checkbox) => (checkbox as HTMLInputElement).value)
 
 				cards.forEach((card) => {
 					const movieWrapper = card.closest('.movie-wrapper') as HTMLElement // Assert as HTMLElement
