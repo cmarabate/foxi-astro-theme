@@ -14,7 +14,10 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 		<Col span="2" />
 		<Col span="8" align="center">
 			<h1>My <strong>Favorite Movies</strong> Ranked</h1>
-			<p class="pb-0 text-lg">Starting with the best...</p>
+			<p class="white mb-0 pb-0 text-lg">Filter by Genre(s)</p>
+			<p class="pb-0 text-sm">
+				(When multiple genres are selected it will only show movies with all of the selected genres)
+			</p>
 
 			<!-- Genre Filters -->
 			<div class="genre-filters">
@@ -31,6 +34,8 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 						</label>
 					))
 				}
+
+				<p class="white mt-10 pb-0 text-lg">Starting with the best...</p>
 			</div>
 
 			<div class="movie-grid">
@@ -290,5 +295,9 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 		overflow-x: hidden;
 		width: 100%;
 		white-space: nowrap;
+	}
+
+	.white {
+		color: white;
 	}
 </style>
