@@ -21,7 +21,12 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 				{
 					uniqueGenres.map((genre) => (
 						<label>
-							<input type="checkbox" value={genre} class="genre-checkbox" />
+							<input
+								type="checkbox"
+								value={genre}
+								class="genre-checkbox"
+								aria-label={`Filter by ${genre}`}
+							/>
 							{genre}
 						</label>
 					))
@@ -67,7 +72,7 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 					.map((checkbox) => (checkbox as HTMLInputElement).value)
 
 				cards.forEach((card) => {
-					const movieWrapper = card.closest('.movie-wrapper') as HTMLElement // Assert as HTMLElement
+					const movieWrapper = card.closest('.movie-wrapper') as HTMLElement
 					if (!movieWrapper) return // Safety check
 
 					const movieGenres = movieWrapper.getAttribute('data-genres')?.split(', ') || []
@@ -75,170 +80,75 @@ const uniqueGenres = Array.from(new Set(moviesData.flatMap((movie) => movie.genr
 						selectedGenres.length === 0 ||
 						selectedGenres.every((genre) => movieGenres.includes(genre))
 
-					// Use style only on the safely asserted HTMLElement
 					movieWrapper.style.display = isVisible ? 'block' : 'none'
 				})
 			}
 
-			// Add event listeners to checkboxes
-			genreCheckboxes.forEach((checkbox) => {
-				checkbox.addEventListener('change', filterMovies)
-			})
-
-			// Existing code for expand/collapse functionality
-			cards.forEach((card) => {
-				const button = card.querySelector('.expand-button') as HTMLElement
-				const description = card.querySelector('.movie-description') as HTMLElement
-				const title = card.querySelector('.movie-title') as HTMLElement
-				const originalHeight = card instanceof HTMLElement ? card.offsetHeight : 0
-
-				const checkDescriptionOverflow = () => {
-					if (description) {
-						const isOverflowing = description.scrollHeight > description.clientHeight
-						if (button instanceof HTMLElement)
-							button.style.display = isOverflowing ? 'block' : 'none'
-
-						if (title) {
-							const titleLineCount = Math.ceil(
-								title.offsetHeight / parseFloat(getComputedStyle(title).lineHeight)
-							)
-							const clampValue = titleLineCount > 1 ? 4 : 5
-							description.style.setProperty('--line-clamp', clampValue.toString())
-						}
-					}
-				}
-
-				checkDescriptionOverflow()
-
-				button?.addEventListener('click', () => {
-					const isExpanded = card.getAttribute('data-expanded') === 'true'
-
-					if (isExpanded) {
-						card.setAttribute('data-expanded', 'false')
-						description?.classList.add('collapsed')
-						description?.classList.remove('expanded')
-						button.textContent = 'Expand'
-						if (card instanceof HTMLElement) card.style.height = `${originalHeight}px`
-					} else {
-						card.setAttribute('data-expanded', 'true')
-						description?.classList.remove('collapsed')
-						description?.classList.add('expanded')
-						button.textContent = 'Show Less'
-						if (card instanceof HTMLElement) card.style.height = `${card.scrollHeight}px`
-					}
-				})
-			})
-		})
-
-		let lastOpenedTab: Window | null = null
-
-		function openLink(url: string) {
-			if (lastOpenedTab && !lastOpenedTab.closed) {
-				lastOpenedTab.location.href = url
-				lastOpenedTab.focus()
-			} else {
-				lastOpenedTab = window.open(url, '_blank')
-			}
-		}
-
-		document.addEventListener('DOMContentLoaded', () => {
-			const links = document.querySelectorAll('.movie-link')
-			links.forEach((link) => {
-				link.addEventListener('click', (event) => {
-					event.preventDefault()
-					const url = (event.currentTarget as HTMLAnchorElement)?.getAttribute('href')
-					if (url) openLink(url)
-				})
-			})
-		})
-	</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const cards = document.querySelectorAll('.movie-card')
-			const genreCheckboxes = document.querySelectorAll('.genre-checkbox')
-
-			// Function to filter movies based on selected genres
-			const filterMovies = () => {
-				const selectedGenres = Array.from(genreCheckboxes)
-					.filter((checkbox) => (checkbox as HTMLInputElement).checked)
-					.map((checkbox) => (checkbox as HTMLInputElement).value)
-
+			// Function to handle expand/collapse functionality
+			const setupExpandCollapse = () => {
 				cards.forEach((card) => {
-					const movieWrapper = card.closest('.movie-wrapper') as HTMLElement // Assert as HTMLElement
-					if (!movieWrapper) return // Safety check
+					const button = card.querySelector('.expand-button') as HTMLElement
+					const description = card.querySelector('.movie-description') as HTMLElement
+					const title = card.querySelector('.movie-title') as HTMLElement
+					const originalHeight = card instanceof HTMLElement ? card.offsetHeight : 0
 
-					const movieGenres = movieWrapper.getAttribute('data-genres')?.split(', ') || []
-					const isVisible =
-						selectedGenres.length === 0 ||
-						selectedGenres.every((genre) => movieGenres.includes(genre))
+					const checkDescriptionOverflow = () => {
+						if (description) {
+							const isOverflowing = description.scrollHeight > description.clientHeight
+							if (button instanceof HTMLElement)
+								button.style.display = isOverflowing ? 'block' : 'none'
 
-					// Use style only on the safely asserted HTMLElement
-					movieWrapper.style.display = isVisible ? 'block' : 'none'
+							if (title) {
+								const titleLineCount = Math.ceil(
+									title.offsetHeight / parseFloat(getComputedStyle(title).lineHeight)
+								)
+								const clampValue = titleLineCount > 1 ? 4 : 5
+								description.style.setProperty('--line-clamp', clampValue.toString())
+							}
+						}
+					}
+
+					checkDescriptionOverflow()
+
+					button?.addEventListener('click', () => {
+						const isExpanded = card.getAttribute('data-expanded') === 'true'
+
+						if (isExpanded) {
+							card.setAttribute('data-expanded', 'false')
+							description?.classList.add('collapsed')
+							description?.classList.remove('expanded')
+							button.textContent = 'Expand'
+							if (card instanceof HTMLElement) card.style.height = `${originalHeight}px`
+						} else {
+							card.setAttribute('data-expanded', 'true')
+							description?.classList.remove('collapsed')
+							description?.classList.add('expanded')
+							button.textContent = 'Show Less'
+							if (card instanceof HTMLElement) card.style.height = `${card.scrollHeight}px`
+						}
+					})
 				})
 			}
 
-			// Add event listeners to checkboxes
+			// Initialize filters and expand/collapse
 			genreCheckboxes.forEach((checkbox) => {
 				checkbox.addEventListener('change', filterMovies)
 			})
 
-			// Existing code for expand/collapse functionality
-			cards.forEach((card) => {
-				const button = card.querySelector('.expand-button') as HTMLElement
-				const description = card.querySelector('.movie-description') as HTMLElement
-				const title = card.querySelector('.movie-title') as HTMLElement
-				const originalHeight = card instanceof HTMLElement ? card.offsetHeight : 0
+			setupExpandCollapse()
 
-				const checkDescriptionOverflow = () => {
-					if (description) {
-						const isOverflowing = description.scrollHeight > description.clientHeight
-						if (button instanceof HTMLElement)
-							button.style.display = isOverflowing ? 'block' : 'none'
+			// Open links in a new tab
+			let lastOpenedTab: Window | null = null
 
-						if (title) {
-							const titleLineCount = Math.ceil(
-								title.offsetHeight / parseFloat(getComputedStyle(title).lineHeight)
-							)
-							const clampValue = titleLineCount > 1 ? 4 : 5
-							description.style.setProperty('--line-clamp', clampValue.toString())
-						}
-					}
+			function openLink(url: string) {
+				if (lastOpenedTab && !lastOpenedTab.closed) {
+					lastOpenedTab.location.href = url
+					lastOpenedTab.focus()
+				} else {
+					lastOpenedTab = window.open(url, '_blank')
 				}
-
-				checkDescriptionOverflow()
-
-				button?.addEventListener('click', () => {
-					const isExpanded = card.getAttribute('data-expanded') === 'true'
-
-					if (isExpanded) {
-						card.setAttribute('data-expanded', 'false')
-						description?.classList.add('collapsed')
-						description?.classList.remove('expanded')
-						button.textContent = 'Expand'
-						if (card instanceof HTMLElement) card.style.height = `${originalHeight}px`
-					} else {
-						card.setAttribute('data-expanded', 'true')
-						description?.classList.remove('collapsed')
-						description?.classList.add('expanded')
-						button.textContent = 'Show Less'
-						if (card instanceof HTMLElement) card.style.height = `${card.scrollHeight}px`
-					}
-				})
-			})
-		})
-
-		let lastOpenedTab: Window | null = null
-
-		function openLink(url: string) {
-			if (lastOpenedTab && !lastOpenedTab.closed) {
-				lastOpenedTab.location.href = url
-				lastOpenedTab.focus()
-			} else {
-				lastOpenedTab = window.open(url, '_blank')
 			}
-		}
 
-		document.addEventListener('DOMContentLoaded', () => {
 			const links = document.querySelectorAll('.movie-link')
 			links.forEach((link) => {
 				link.addEventListener('click', (event) => {
