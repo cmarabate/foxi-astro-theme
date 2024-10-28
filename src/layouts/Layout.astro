@@ -38,12 +38,24 @@ const { title, description, ogImage, noindex } = Astro.props
 		]}
 	>
 		<GoogleTagManagerBody />
-		<!-- <NavigationBar /> -->
+		<NavigationBar />
 		<Main>
 			<slot />
 		</Main>
 		<!-- <Footer /> -->
 		<Modal />
 		<Scriprs />
+
+		<script>
+			// Check if the "dark" class is on the <html> tag and add it to <body> if so
+			document.addEventListener('DOMContentLoaded', () => {
+				const htmlTag = document.documentElement // Selects the <html> tag
+				const bodyTag = document.body // Selects the <body> tag
+
+				if (htmlTag.classList.contains('dark')) {
+					bodyTag.classList.add('dark')
+				}
+			})
+		</script>
 	</body>
 </html>
