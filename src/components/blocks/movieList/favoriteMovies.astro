@@ -137,6 +137,45 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 			genreCheckboxes.forEach((checkbox) => checkbox.addEventListener('change', filterMovies))
 			if (languageFilter) languageFilter.addEventListener('change', filterMovies)
 			if (dubbedFilter) dubbedFilter.addEventListener('change', filterMovies)
+
+			// Expand/collapse functionality for long movie descriptions
+			const expandButtons = document.querySelectorAll('.expand-button')
+
+			expandButtons.forEach((button) => {
+				;(button as HTMLElement).style.display = 'block'
+				button.addEventListener('click', (e) => {
+					const target = e.target as HTMLElement | null
+					if (!target) return
+					const movieCard = target.closest('.movie-card')
+					if (!movieCard) return
+					const description = movieCard.querySelector('.movie-description')
+					let isExpanded = false
+					if (description) {
+						isExpanded = description.classList.toggle('expanded')
+						description.classList.toggle('collapsed', !isExpanded)
+					}
+
+					// Toggle expanded class on movie card to adjust height
+					movieCard.classList.toggle('expanded', isExpanded)
+
+					// Update button text
+					button.textContent = isExpanded ? 'Collapse' : 'Expand'
+				})
+			})
+
+			// Show the expand button only if the description is truncated
+			document.querySelectorAll('.movie-description').forEach((description) => {
+				const expandButton = description.closest('.movie-content')?.querySelector('.expand-button')
+				if (description.scrollHeight > description.clientHeight) {
+					if (expandButton) {
+						;(expandButton as HTMLElement).style.display = 'inline-block'
+					}
+				} else {
+					if (expandButton) {
+						;(expandButton as HTMLElement).style.display = 'none'
+					}
+				}
+			})
 		})
 	</script>
 </Section>
@@ -156,17 +195,22 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		overflow: hidden;
 		width: 310px;
-		height: 655px;
+		min-height: 655px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 15px;
 		position: relative;
-		transition: box-shadow 0.2s ease;
+		transition: max-height 0.3s ease;
+	}
+
+	.movie-card.expanded {
+		max-height: none; /* Allow card to expand as needed */
 	}
 	.movie-card:hover {
 		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	}
+
 	.movie-wrapper {
 		position: relative;
 	}
@@ -220,16 +264,18 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 		-webkit-line-clamp: var(--line-clamp, 5);
 		-webkit-box-orient: vertical;
 	}
+
 	.movie-description.collapsed {
 		overflow: hidden;
 		max-height: calc(var(--line-clamp, 5) * 1.2em);
 	}
+
 	.movie-description.expanded {
 		overflow: visible;
 		-webkit-line-clamp: none;
-		-webkit-box-orient: unset;
 		max-height: none;
 	}
+
 	.expand-button {
 		background-color: transparent;
 		border: none;
