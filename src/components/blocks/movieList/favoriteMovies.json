@@ -90,6 +90,16 @@
 		"description": "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities."
 	},
 	{
+		"title": "Redline",
+		"year": "2010",
+		"genres": ["Science-Fiction", "Adventure", "Action", "Animation", "Thriller"],
+		"originalLanguage": "Japanese",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/051a9e96-e2b1-4f4f-b43f-cced61231624/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/redline-2009",
+		"description": "A story about the most popular racing event in the galaxy, the Redline, and the various racers who compete in it."
+	},
+	{
 		"title": "Alita: Battle Angel",
 		"year": "2019",
 		"genres": ["Science-Fiction", "Action", "Adventure", "Fantasy"],
@@ -570,6 +580,16 @@
 		"description": "A video game designer is stripped of his identity and recruited by a mysterious force to be the gatekeeper of a multi-dimensional portal."
 	},
 	{
+		"title": "Mayhem",
+		"year": "2017",
+		"genres": ["Action", "Horror", "Comedy", "Thriller"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/537e2d76-afaa-4ba2-a574-474ad2300650/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/mayhem-2017",
+		"description": "A virus spreads through an office complex causing white-collar workers to act out their worst impulses."
+	},
+	{
 		"title": "Possessor",
 		"year": "2020",
 		"genres": ["Science-Fiction", "Horror", "Thriller"],
@@ -588,6 +608,96 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/aa688d48-4691-43e0-970a-4be5efb1fbb4/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/archive-2020",
 		"description": "2038: George Almore is working on a true human-equivalent AI. His latest prototype is almost ready. This sensitive phase is also the riskiest. Especially as he has a goal that must be hidden at all costs."
+	},
+	{
+		"title": "The Call",
+		"year": "2020",
+		"genres": ["Thriller", "Psychological Thriller", "Horror", "Mystery", "Science-Fiction"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/ced17a16-cceb-47d2-8900-efeb9437c5b4/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/call-2020",
+		"description": "Two people live in different times. Seo-Yeon lives in the present and Young-Sook lives in the past. One phone call connects the two, and their lives are changed irrevocably."
+	},
+	{
+		"title": "Belle",
+		"year": "2021",
+		"genres": ["Animation", "Fantasy", "Drama", "Musical"],
+		"originalLanguage": "Japanese",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/f446facb-1128-4e1a-a016-bce14bb3a77b/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/belle-2021",
+		"description": "Suzu is a shy high school student living in a rural village. For years, she has only been a shadow of herself. But when she enters 'U', a massive virtual world, she escapes into her online persona as Belle, a globally-beloved singer."
+	},
+	{
+		"title": "2001: A Space Odyssey",
+		"year": "1968",
+		"genres": ["Science-Fiction", "Adventure", "Drama", "Mystery", "Psychological"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/59292f2d-25ce-425c-947f-8ca94df239e0/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/2001-a-space-odyssey-1968",
+		"description": "When a mysterious artifact is uncovered on the Moon, a spacecraft manned by two humans and one supercomputer is sent to Jupiter to find its origins."
+	},
+	{
+		"title": "Cam",
+		"year": "2018",
+		"genres": ["Thriller", "Psychological Thriller", "Horror", "Mystery"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/86586806-c1f1-49a6-aad3-8100beea17d4/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/cam-2018",
+		"description": "Alice, an ambitious camgirl, wakes up one day to discover she's been replaced on her show with an exact replica of herself."
+	},
+	{
+		"title": "South Park: Bigger, Longer & Uncut",
+		"year": "1999",
+		"genre": ["Animation", "Comedy", "Musical"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/5f76051f-8e20-4bfd-9ffd-4597abb03af4/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/south-park-bigger-longer-uncut-1999",
+		"description": "When Stan Marsh and his friends go see an R-rated movie, they start cursing and their parents think that Canada is to blame."
+	},
+	{
+		"title": "BASEketball",
+		"year": "1998",
+		"genre": ["Comedy", "Sports", "Satire"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/51306430-88a5-499f-af25-7c11c58c17e1/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/baseketball-1998",
+		"description": "Two childhood friends are pro athletes of a national sport called BASEketball, a hybrid of baseball and basketball, and must deal with a greedy businessman scheming against their team."
+	},
+	{
+		"title": "Cannibal! The Musical",
+		"year": "1993",
+		"genre": ["Comedy", "Musical", "Adventure", "Dark Comedy", "Satire"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/8dfae418-c3a8-4c28-a20f-253500ee27e9/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/cannibal-the-musical-1993",
+		"description": "Two childhood friends are pro athletes of a national sport called BASEketball, a hybrid of baseball and basketball, and must deal with a greedy businessman scheming against their team."
+	},
+	{
+		"title": "Game Over, Man!",
+		"year": "2018",
+		"genre": ["Action", "Comedy", "Thriller"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/d9fe5ae9-8478-42d6-8698-50af2b709c8b/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/game-over-man-2018",
+		"description": "Three friends are on the verge of getting their video game financed when their benefactor is taken hostage by terrorists."
+	},
+	{
+		"title": "Crazy Rich Asians",
+		"year": "2018",
+		"genres": ["Romantic Comedy", "Comedy", "Drama"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/c49cc5f4-a7ab-434d-aacc-1fc353f8924a/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/crazy-rich-asians-2018",
+		"description": "This contemporary romantic comedy based on a global bestseller follows native New Yorker Rachel Chu to Singapore to meet her boyfriend's family."
 	},
 	{
 		"title": "Divergent",
@@ -638,6 +748,26 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/17dea44a-1d7e-4704-b622-35b6eefae377/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/source-code-2011",
 		"description": "A soldier wakes up in someone else's body and discovers he's part of an experimental government program to find the bomber of a commuter train within 8 minutes."
+	},
+	{
+		"title": "21 Jump Street",
+		"year": "2012",
+		"genres": ["Comedy", "Action", "Crime", "Buddy"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/2e34eace-efaa-4463-bd37-f4912fa79544/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/21-jump-street-2012",
+		"description": "A pair of underachieving cops are sent back to a local high school to blend in and bring down a synthetic drug ring."
+	},
+	{
+		"title": "22 Jump Street",
+		"year": "2014",
+		"genres": ["Comedy", "Action", "Crime", "Buddy"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/605d03e9-ccce-42c4-8889-ef24c3746a48/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/22-jump-street-2014",
+		"description": "After making their way through high school (twice), big changes are in store for officers Schmidt and Jenko when they go deep undercover at a local college."
 	},
 	{
 		"title": "Night Teeth",
@@ -885,6 +1015,16 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/9399d79e-f376-451d-a0dc-21bc9c05d137/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/malignant-2020",
 		"description": "Madison is paralyzed by shocking visions of grisly murders, and her torment worsens as she discovers that these waking dreams are in fact terrifying realities."
+	},
+	{
+		"title": "Talk to Me",
+		"year": "2023",
+		"genres": ["Horror", "Thriller", "Supernatural", "Mystery"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/7cef97a9-7338-4074-abc8-4fc8a7538237/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/talk-to-me-2023",
+		"description": "When a group of friends discover how to conjure spirits using an embalmed hand, they become hooked on the new thrill, until one of them goes too far and unleashes terrifying supernatural forces."
 	},
 	{
 		"title": "Eternal Sunshine of the Spotless Mind",
