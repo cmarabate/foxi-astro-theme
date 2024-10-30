@@ -72,7 +72,7 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 					moviesData.map((movie, index) => (
 						<div
 							class="movie-wrapper"
-							data-genres={movie.genres.join(', ')}
+							data-genres={(movie.genres ?? []).join(', ')}
 							data-language={movie.originalLanguage}
 							data-dubbed={movie.dubbedInEnglish}
 						>
