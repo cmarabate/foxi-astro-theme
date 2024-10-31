@@ -21,13 +21,13 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
+	siteTitle: 'My Favorite Movies Ranked',
 	siteDescription:
-		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
+		'A list of all my favorite movies in order from best to worst. You can filter for multiple different genres as well as their original language and if they have been dubbed in English or not.',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/logo.svg',
-		alt: 'Foxi. logo'
+		alt: 'My Favorite Movies Ranked Logo'
 	},
 	canonical: true,
 	noindex: false,

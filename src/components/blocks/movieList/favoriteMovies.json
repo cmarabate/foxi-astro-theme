@@ -772,7 +772,7 @@
 	{
 		"title": "Night Teeth",
 		"year": "2021",
-		"genres": ["Horror", "Thriller", "Fantasy"],
+		"genres": ["Horror", "Thriller", "Fantasy", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/1f7f6dae-b1ff-4aab-bec3-8dfebf7907ce/poster-500.webp",
@@ -802,7 +802,7 @@
 	{
 		"title": "Immanence",
 		"year": "2022",
-		"genres": ["Science-Fiction", "Horror", "Mystery", "Alien Invasion"],
+		"genres": ["Science-Fiction", "Horror", "Mystery", "Alien Invasion", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/b10f438a-b0be-4876-9bf1-0ad17fa342c4/poster-500.webp",
@@ -862,7 +862,7 @@
 	{
 		"title": "Abigail",
 		"year": "2019",
-		"genres": ["Fantasy", "Adventure", "Science-Fiction"],
+		"genres": ["Fantasy", "Adventure", "Science-Fiction", "Supernatural"],
 		"originalLanguage": "Russian",
 		"dubbedInEnglish": "yes",
 		"imageUrl": "https://img.rgstatic.com/content/movie/f98d6646-84db-48ca-af8b-086f50974724/poster-500.webp",
@@ -959,7 +959,7 @@
 	{
 		"title": "Smile",
 		"year": "2022",
-		"genres": ["Horror", "Thriller", "Psychological Thriller"],
+		"genres": ["Horror", "Thriller", "Psychological Thriller", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/1972ac7f-92f3-45e6-8dcc-2eab8f06aa3c/poster-500.webp",
@@ -969,7 +969,7 @@
 	{
 		"title": "The Boy and The Heron",
 		"year": "2023",
-		"genres": ["Animation", "Fantasy", "Drama"],
+		"genres": ["Animation", "Fantasy", "Drama", "Supernatural"],
 		"originalLanguage": "Japanese",
 		"dubbedInEnglish": "yes",
 		"imageUrl": "https://img.rgstatic.com/content/movie/79e3d30f-fe1d-4d60-9216-7badfab86392/poster-500.webp",
@@ -1009,7 +1009,7 @@
 	{
 		"title": "Malignant",
 		"year": "2021",
-		"genres": ["Horror", "Thriller", "Psychological Thriller"],
+		"genres": ["Horror", "Thriller", "Psychological Thriller", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/9399d79e-f376-451d-a0dc-21bc9c05d137/poster-500.webp",
@@ -1049,7 +1049,7 @@
 	{
 		"title": "Lullaby",
 		"year": "2022",
-		"genres": ["Horror", "Thriller"],
+		"genres": ["Horror", "Thriller", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/63225a13-5fb0-492c-b547-a4256b540a7b/poster-500.webp",
@@ -1099,7 +1099,7 @@
 	{
 		"title": "Choose or Die",
 		"year": "2022",
-		"genres": ["Horror", "Thriller"],
+		"genres": ["Horror", "Thriller", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/56476d79-77d8-49a5-941a-330a95e65e3b/poster-500.webp",
@@ -1119,7 +1119,7 @@
 	{
 		"title": "The Neon Demon",
 		"year": "2016",
-		"genres": ["Horror", "Thriller", "Drama"],
+		"genres": ["Horror", "Thriller", "Drama", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/38327b90-bf3c-455a-bb1e-c0c96c6c6fdc/poster-500.webp",
@@ -1159,7 +1159,7 @@
 	{
 		"title": "Silver and the Book of Dreams",
 		"year": "2023",
-		"genres": ["Adventure", "Fantasy"],
+		"genres": ["Adventure", "Fantasy", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/b38abcaf-d834-48a2-8236-c5d0b39ae1d2/poster-500.webp",
@@ -1169,7 +1169,7 @@
 	{
 		"title": "The Wave",
 		"year": "2020",
-		"genres": ["Science-Fiction", "Comedy", "Adventure"],
+		"genres": ["Science-Fiction", "Comedy", "Adventure", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/5befae4d-eb29-44bf-b5ae-6ba52faa16a8/poster-500.webp",
@@ -1249,7 +1249,7 @@
 	{
 		"title": "Jeruzalem",
 		"year": "2016",
-		"genres": ["Horror", "Thriller", "Fantasy"],
+		"genres": ["Horror", "Thriller", "Fantasy", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/096401ef-39d9-439a-8a37-ad11cf32e80d/poster-500.webp",
@@ -1259,7 +1259,7 @@
 	{
 		"title": "Super Me",
 		"year": "2021",
-		"genres": ["Fantasy", "Thriller"],
+		"genres": ["Fantasy", "Thriller", "Supernatural"],
 		"originalLanguage": "Mandarin",
 		"dubbedInEnglish": "yes",
 		"imageUrl": "https://img.rgstatic.com/content/movie/8f719dbe-a103-4387-ab83-a54d89699798/poster-500.webp",
@@ -1299,7 +1299,7 @@
 	{
 		"title": "As Above, So Below",
 		"year": "2014",
-		"genres": ["Horror", "Thriller", "Mystery", "Psychological Thriller"],
+		"genres": ["Horror", "Thriller", "Mystery", "Psychological Thriller", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/71132b9d-c05d-4e42-8782-6465b9bfc1dd/poster-500.webp",
@@ -1359,7 +1359,7 @@
 	{
 		"title": "Hereditary",
 		"year": "2018",
-		"genres": ["Horror", "Drama", "Thriller"],
+		"genres": ["Horror", "Drama", "Thriller", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/ab887195-907f-4ed4-a7e0-9a416c13d414/poster-500.webp",
@@ -1369,7 +1369,7 @@
 	{
 		"title": "Suspiria",
 		"year": "2018",
-		"genres": ["Horror", "Mystery", "Thriller"],
+		"genres": ["Horror", "Mystery", "Thriller", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/2374954a-66cb-440d-a23e-6adba8db9e5b/poster-500.webp",

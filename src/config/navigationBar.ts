@@ -35,7 +35,7 @@ export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
 		alt: 'My Favorite Movies Ranked Logo',
-		text: ''
+		text: 'movies.cmarabate.com'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
