@@ -90,6 +90,26 @@
 		"description": "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities."
 	},
 	{
+		"title": "The Villainess",
+		"year": "2017",
+		"genres": ["Action", "Thriller", "Crime", "Drama"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/bba255db-c019-4f47-87b6-ffda0f2ab448/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/the-villainess-2017",
+		"description": "A female assassin leaves a trail of bodies behind her as she seeks revenge."
+	},
+	{
+		"title": "Badland Hunters",
+		"year": "2024",
+		"genres": ["Action", "Adventure", "Horror", "Western", "Supernatural"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/86a8028c-6c64-4293-88ea-2863e544be4c/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/badland-hunters-2024",
+		"description": "When an earthquake turns Seoul into a lawless badland, a fearless huntsman goes on to rescue a teenager from a mad doctor who held the teenager captive in a camp full of dangerous cultists."
+	},
+	{
 		"title": "Redline",
 		"year": "2010",
 		"genres": ["Science-Fiction", "Adventure", "Action", "Animation", "Thriller"],
