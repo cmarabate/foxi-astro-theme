@@ -40,6 +40,16 @@
 		"description": "Humans built huge engines on the surface of the earth to find a new home. But the road to the universe is perilous. In order to save earth, young people once again have to step forward to start a race against time for life and death."
 	},
 	{
+		"title": "Atlas",
+		"year": "2024",
+		"genres": ["Science-Fiction", "Thriller", "Action", "Adventure"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/6be1e5ff-9f0e-48f6-99ea-049cfa600a46/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/atlas",
+		"description": "In a bleak-sounding future, an A.I. soldier has determined that the only way to end war is to end humanity."
+	},
+	{
 		"title": "Kill Boksoon",
 		"year": "2023",
 		"genres": ["Action", "Thriller", "Crime", "Drama"],
@@ -90,6 +100,16 @@
 		"description": "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities."
 	},
 	{
+		"title": "Ballerina",
+		"year": "2023",
+		"genres": ["Action", "Thriller", "Crime", "Drama"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/424aeb06-696e-4143-89f7-131dbf46d24a/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/ballerina-2023",
+		"description": "Grieving the loss of a best friend she couldn't protect, an ex-bodyguard sets out to fulfill her dear friend's last wish: sweet revenge."
+	},
+	{
 		"title": "The Villainess",
 		"year": "2017",
 		"genres": ["Action", "Thriller", "Crime", "Drama"],
@@ -102,7 +122,7 @@
 	{
 		"title": "Badland Hunters",
 		"year": "2024",
-		"genres": ["Action", "Adventure", "Horror", "Western", "Supernatural"],
+		"genres": ["Action", "Adventure", "Horror", "Supernatural", "Apocalyptic"],
 		"originalLanguage": "Korean",
 		"dubbedInEnglish": "yes",
 		"imageUrl": "https://img.rgstatic.com/content/movie/86a8028c-6c64-4293-88ea-2863e544be4c/poster-500.webp",
@@ -112,7 +132,7 @@
 	{
 		"title": "Redline",
 		"year": "2010",
-		"genres": ["Science-Fiction", "Adventure", "Action", "Animation", "Thriller"],
+		"genres": ["Science-Fiction", "Adventure", "Action", "Animation", "Thriller", "Sports"],
 		"originalLanguage": "Japanese",
 		"dubbedInEnglish": "yes",
 		"imageUrl": "https://img.rgstatic.com/content/movie/051a9e96-e2b1-4f4f-b43f-cced61231624/poster-500.webp",
@@ -222,7 +242,7 @@
 	{
 		"title": "Furiosa: A Mad Max Saga",
 		"year": "2024",
-		"genres": ["Action", "Adventure", "Science-Fiction"],
+		"genres": ["Action", "Adventure", "Science-Fiction", "Apocalyptic"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/9b4cd1b2-2438-40d7-a609-05e77597df49/poster-500.webp",
@@ -232,7 +252,7 @@
 	{
 		"title": "Mad Max: Fury Road",
 		"year": "2015",
-		"genres": ["Action", "Adventure", "Science-Fiction"],
+		"genres": ["Action", "Adventure", "Science-Fiction", "Apocalyptic"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/05465410-4942-40e0-bb6f-41c0bfe167ae/poster-500.webp",
@@ -288,6 +308,106 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/e021b9b2-0102-4dcb-afb9-3f8538fe154f/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/chaos-walking-2019",
 		"description": "Two unlikely companions embark on a perilous adventure through the badlands of an unexplored planet as they try to escape a dangerous and disorienting reality where all thoughts are seen and heard by everyone."
+	},
+	{
+		"title": "M3GAN",
+		"year": "2022",
+		"genres": ["Horror", "Science-Fiction", "Thriller"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/9921c1c6-5954-4d7a-8332-a05ab3e80675/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/m3gan-2023",
+		"description": "When robotics engineer Gemma becomes the guardian of her orphaned niece, Cady, she thinks her new invention, a robotic AI, will be a good companion. However, M3GAN begins to behave in unexpected and shocking ways."
+	},
+	{
+		"title": "The Darkest Hour",
+		"year": "2011",
+		"genres": ["Science-Fiction", "Action", "Thriller", "Alien Invasion"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/96932d83-2666-4474-9e38-209400abcf6f/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/the-darkest-hour-2011",
+		"description": "In Moscow, five young people lead the charge against an alien race who have attacked Earth via our power supply."
+	},
+	{
+		"title": "I Am Mother",
+		"year": "2019",
+		"genres": ["Science-Fiction", "Thriller", "Drama"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/278d36fd-39e3-4415-8657-a47ac6775c5d/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/i-am-mother-2019",
+		"description": "In the wake of humanity's extinction, a teenage girl is raised by a robot designed to repopulate the earth. But their unique bond is threatened when an inexplicable stranger arrives with alarming news."
+	},
+	{
+		"title": "Trouble",
+		"year": "2024",
+		"genres": ["Comedy", "Drama", "Action", "Mystery"],
+		"originalLanguage": "Swedish",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/96921cb6-131d-4112-9306-a4017660949e/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/trouble-2024",
+		"description": "Conny, a divorced salesman, gets wrongfully imprisoned for murder. There, he meets criminals who mistake him for a pilot like his ex-wife's new boyfriend. Chaos ensues as he navigates life behind bars while separated from his daughter."
+	},
+	{
+		"title": "A Rough Draft",
+		"year": "2018",
+		"genres": ["Science-Fiction", "Fantasy", "Thriller"],
+		"originalLanguage": "Russian",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/5ca96c45-4cd5-40c8-a48f-f289db192797/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/a-rough-draft-2018",
+		"description": "A video game designer is stripped of his identity and recruited by a mysterious force to be the gatekeeper of a multi-dimensional portal."
+	},
+	{
+		"title": "Mayhem",
+		"year": "2017",
+		"genres": ["Action", "Horror", "Comedy", "Thriller"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/537e2d76-afaa-4ba2-a574-474ad2300650/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/mayhem-2017",
+		"description": "A virus spreads through an office complex causing white-collar workers to act out their worst impulses."
+	},
+	{
+		"title": "Promising Young Woman",
+		"year": "2020",
+		"genres": ["Thriller", "Drama", "Comedy"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/419d9f29-2c52-41ab-8924-2117d3f29e55/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/promising-young-woman-2020",
+		"description": "Nothing in Cassie's life is what it appears to be - she's wickedly smart, tantalizingly cunning, and she's living a secret double life. Now, an unexpected encounter is about to give Cassie a chance to right the wrongs from the past."
+	},
+	{
+		"title": "Belle",
+		"year": "2021",
+		"genres": ["Animation", "Fantasy", "Drama", "Musical"],
+		"originalLanguage": "Japanese",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/f446facb-1128-4e1a-a016-bce14bb3a77b/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/belle-2021",
+		"description": "Suzu is a shy high school student living in a rural village. For years, she has only been a shadow of herself. But when she enters 'U', a massive virtual world, she escapes into her online persona as Belle, a globally-beloved singer."
+	},
+	{
+		"title": "Possessor",
+		"year": "2020",
+		"genres": ["Science-Fiction", "Horror", "Thriller"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/ec8fe5e8-a195-4bbd-ac6c-e8c3307f9c88/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/possessor-2020",
+		"description": "An agent works for a secretive organization that uses brain-implant technology to inhabit other people's bodies - ultimately driving them to commit assassinations for high-paying clients."
+	},
+	{
+		"title": "Archive",
+		"year": "2020",
+		"genres": ["Science-Fiction", "Thriller", "Drama"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/aa688d48-4691-43e0-970a-4be5efb1fbb4/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/archive-2020",
+		"description": "2038: George Almore is working on a true human-equivalent AI. His latest prototype is almost ready. This sensitive phase is also the riskiest. Especially as he has a goal that must be hidden at all costs."
 	},
 	{
 		"title": "Limitless",
@@ -370,16 +490,6 @@
 		"description": "A teen gang in South London defend their block from an alien invasion."
 	},
 	{
-		"title": "Three Thousand Years of Longing",
-		"year": "2022",
-		"genres": ["Fantasy", "Drama", "Romance"],
-		"originalLanguage": "English",
-		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/582eaecb-6de4-461d-b093-b2b620b45921/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/three-thousand-years-of-longing-2022",
-		"description": "A lonely scholar, on a trip to Istanbul, discovers a Djinn who offers her three wishes in exchange for his freedom."
-	},
-	{
 		"title": "Mirage",
 		"year": "2018",
 		"genres": ["Science-Fiction", "Thriller", "Drama"],
@@ -398,26 +508,6 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/f379d32e-2ca4-49d2-abe8-9ff0fa64f0c9/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/paradise-2023",
 		"description": "After his wife is forced to give up 40 years of her life as payment for an insurance debt, a man desperately searches for a way to get them back."
-	},
-	{
-		"title": "M3GAN",
-		"year": "2022",
-		"genres": ["Horror", "Science-Fiction", "Thriller"],
-		"originalLanguage": "English",
-		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/9921c1c6-5954-4d7a-8332-a05ab3e80675/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/m3gan-2023",
-		"description": "When robotics engineer Gemma becomes the guardian of her orphaned niece, Cady, she thinks her new invention, a robotic AI, will be a good companion. However, M3GAN begins to behave in unexpected and shocking ways."
-	},
-	{
-		"title": "The Darkest Hour",
-		"year": "2011",
-		"genres": ["Science-Fiction", "Action", "Thriller", "Alien Invasion"],
-		"originalLanguage": "English",
-		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/96932d83-2666-4474-9e38-209400abcf6f/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/the-darkest-hour-2011",
-		"description": "In Moscow, five young people lead the charge against an alien race who have attacked Earth via our power supply."
 	},
 	{
 		"title": "Guardians of the Galaxy Vol. 2",
@@ -470,6 +560,16 @@
 		"description": "When Guy, a bank teller, learns that he is a non-player character in a bloodthirsty, open-world video game, he goes on to become the hero of the story and takes the responsibility of saving the world."
 	},
 	{
+		"title": "Three Thousand Years of Longing",
+		"year": "2022",
+		"genres": ["Fantasy", "Drama", "Romance"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/582eaecb-6de4-461d-b093-b2b620b45921/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/three-thousand-years-of-longing-2022",
+		"description": "A lonely scholar, on a trip to Istanbul, discovers a Djinn who offers her three wishes in exchange for his freedom."
+	},
+	{
 		"title": "Love and Monsters",
 		"year": "2020",
 		"genres": ["Science-Fiction", "Adventure", "Action", "Apocalyptic", "Comedy", "Romance"],
@@ -478,16 +578,6 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/37de28eb-a7c6-4585-83f1-2cb7b809ae22/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/love-and-monsters-2020",
 		"description": "Seven years after he survived the monster apocalypse, lovably hapless Joel leaves his cozy underground bunker behind on a quest to reunite with his high school sweetheart."
-	},
-	{
-		"title": "Promising Young Woman",
-		"year": "2020",
-		"genres": ["Thriller", "Drama", "Comedy"],
-		"originalLanguage": "English",
-		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/419d9f29-2c52-41ab-8924-2117d3f29e55/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/promising-young-woman-2020",
-		"description": "Nothing in Cassie's life is what it appears to be - she's wickedly smart, tantalizingly cunning, and she's living a secret double life. Now, an unexpected encounter is about to give Cassie a chance to right the wrongs from the past."
 	},
 	{
 		"title": "IF",
@@ -570,64 +660,94 @@
 		"description": "An ex-mercenary is forced out of isolation when three mysterious men kidnap and brainwash the city's children afflicted with the Geostigma disease."
 	},
 	{
-		"title": "I Am Mother",
+		"title": "Abigail",
 		"year": "2019",
-		"genres": ["Science-Fiction", "Thriller", "Drama"],
-		"originalLanguage": "English",
-		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/278d36fd-39e3-4415-8657-a47ac6775c5d/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/i-am-mother-2019",
-		"description": "In the wake of humanity's extinction, a teenage girl is raised by a robot designed to repopulate the earth. But their unique bond is threatened when an inexplicable stranger arrives with alarming news."
-	},
-	{
-		"title": "Trouble",
-		"year": "2024",
-		"genres": ["Comedy", "Drama", "Action", "Mystery"],
-		"originalLanguage": "Swedish",
-		"dubbedInEnglish": "yes",
-		"imageUrl": "https://img.rgstatic.com/content/movie/96921cb6-131d-4112-9306-a4017660949e/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/trouble-2024",
-		"description": "Conny, a divorced salesman, gets wrongfully imprisoned for murder. There, he meets criminals who mistake him for a pilot like his ex-wife's new boyfriend. Chaos ensues as he navigates life behind bars while separated from his daughter."
-	},
-	{
-		"title": "A Rough Draft",
-		"year": "2018",
-		"genres": ["Science-Fiction", "Fantasy", "Thriller"],
+		"genres": ["Fantasy", "Adventure", "Science-Fiction", "Supernatural"],
 		"originalLanguage": "Russian",
 		"dubbedInEnglish": "yes",
-		"imageUrl": "https://img.rgstatic.com/content/movie/5ca96c45-4cd5-40c8-a48f-f289db192797/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/a-rough-draft-2018",
-		"description": "A video game designer is stripped of his identity and recruited by a mysterious force to be the gatekeeper of a multi-dimensional portal."
+		"imageUrl": "https://img.rgstatic.com/content/movie/f98d6646-84db-48ca-af8b-086f50974724/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/abigail-2019-1",
+		"description": "Abigail lives in a city whose borders were closed because of an epidemic and Abby's father was one of the sick. Going against the authorities to find her father, Abby learns that her city is actually full of magic."
 	},
 	{
-		"title": "Mayhem",
+		"title": "Hero",
+		"year": "2019",
+		"genres": ["Action", "Drama", "Thriller"],
+		"originalLanguage": "Russian",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/b6f6d6fe-96f3-4c4b-972f-2c1ebb663b75/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/hero-2019-1",
+		"description": "15 years ago, Andrei, under the guidance of his father, Colonel Rodina, was trained in a secret special school, where agents of the Foreign Intelligence Service were trained from teenagers. When the pilot project was closed, Andrei 'burned the bridges', remained in Europe and tried not to recall the past. But one day his father calls, whom everyone considered dead. He reports that hunting is open for Andrei, but who decided to destroy him is unknown. Fleeing, he finds Masha, with whom he studied at a special school. Andrei will have to go through love and betrayal and learn about the true scale of the ruthless espionage game, into which he was involuntarily involved."
+	},
+	{
+		"title": "The Guardians",
 		"year": "2017",
-		"genres": ["Action", "Horror", "Comedy", "Thriller"],
-		"originalLanguage": "English",
-		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/537e2d76-afaa-4ba2-a574-474ad2300650/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/mayhem-2017",
-		"description": "A virus spreads through an office complex causing white-collar workers to act out their worst impulses."
+		"genres": ["Action", "Fantasy", "Superhero"],
+		"originalLanguage": "Russian",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/72942844-a301-4e9d-b9ab-d149c4d57a10/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/guardians-2017",
+		"description": "During the Cold War, an organization called 'Patriot' created a super-hero squad, which includes members of multiple Soviet republics. For years, the heroes had to hide their identities, but in hard times they must show themselves again."
 	},
 	{
-		"title": "Possessor",
-		"year": "2020",
-		"genres": ["Science-Fiction", "Horror", "Thriller"],
+		"title": "Jeruzalem",
+		"year": "2016",
+		"genres": ["Horror", "Thriller", "Fantasy", "Supernatural"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/ec8fe5e8-a195-4bbd-ac6c-e8c3307f9c88/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/possessor-2020",
-		"description": "An agent works for a secretive organization that uses brain-implant technology to inhabit other people's bodies - ultimately driving them to commit assassinations for high-paying clients."
+		"imageUrl": "https://img.rgstatic.com/content/movie/096401ef-39d9-439a-8a37-ad11cf32e80d/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/jeruzalem-2016",
+		"description": "When a couple of American young adults fly to Israel to visit the city of Jerusalem, a biblical nightmare falls upon them."
 	},
 	{
-		"title": "Archive",
-		"year": "2020",
-		"genres": ["Science-Fiction", "Thriller", "Drama"],
+		"title": "Super Me",
+		"year": "2021",
+		"genres": ["Fantasy", "Thriller", "Supernatural"],
+		"originalLanguage": "Mandarin",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/8f719dbe-a103-4387-ab83-a54d89699798/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/super-me-2021",
+		"description": "A young scriptwriter starts bringing valuable objects back from his short nightmares of being chased by a demon. Selling them makes him rich."
+	},
+	{
+		"title": "Black Hollow Cage",
+		"year": "2017",
+		"genres": ["Drama", "Thriller", "Science-Fiction"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/aa688d48-4691-43e0-970a-4be5efb1fbb4/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/archive-2020",
-		"description": "2038: George Almore is working on a true human-equivalent AI. His latest prototype is almost ready. This sensitive phase is also the riskiest. Especially as he has a goal that must be hidden at all costs."
+		"imageUrl": "https://img.rgstatic.com/content/movie/a85f4a53-3e4b-4f4b-a804-12d079c770d5/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/black-hollow-cage-2017",
+		"description": "A girl who lives secluded in a house in the woods with the only company of her father and a wolfhound finds among the trees a mysterious cubic device."
+	},
+	{
+		"title": "The Blackout",
+		"year": "2019",
+		"genres": ["Science-Fiction", "Thriller", "Alien Invasion"],
+		"originalLanguage": "Russian",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/b87e45bc-b15f-43d8-98b7-d4c14124032e/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/the-blackout-2019",
+		"description": "Life on Earth is rapidly destroyed except for a small area in Eastern Europe."
+	},
+	{
+		"title": "Deep",
+		"year": "2021",
+		"genres": ["Thriller", "Horror", "Science-Fiction"],
+		"originalLanguage": "Thai",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/19f497ab-881e-4527-9a77-9554e0e47a37/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/deep-2021",
+		"description": "Four insomniac med school students are lured into a neuroscience experiment that spirals out of control and must find a way out before it's too late."
+	},
+	{
+		"title": "The Hurricane Heist",
+		"year": "2018",
+		"genres": ["Action", "Thriller", "Crime", "Disaster"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/89c4ca74-bbc9-4492-a840-6957632d29e8/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/category-5-2017",
+		"description": "Thieves attempt a massive heist against the U.S. Treasury as a Category 5 hurricane approaches one of its Mint facilities."
 	},
 	{
 		"title": "The Call",
@@ -638,16 +758,6 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/ced17a16-cceb-47d2-8900-efeb9437c5b4/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/call-2020",
 		"description": "Two people live in different times. Seo-Yeon lives in the present and Young-Sook lives in the past. One phone call connects the two, and their lives are changed irrevocably."
-	},
-	{
-		"title": "Belle",
-		"year": "2021",
-		"genres": ["Animation", "Fantasy", "Drama", "Musical"],
-		"originalLanguage": "Japanese",
-		"dubbedInEnglish": "yes",
-		"imageUrl": "https://img.rgstatic.com/content/movie/f446facb-1128-4e1a-a016-bce14bb3a77b/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/belle-2021",
-		"description": "Suzu is a shy high school student living in a rural village. For years, she has only been a shadow of herself. But when she enters 'U', a massive virtual world, she escapes into her online persona as Belle, a globally-beloved singer."
 	},
 	{
 		"title": "2001: A Space Odyssey",
@@ -668,6 +778,16 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/86586806-c1f1-49a6-aad3-8100beea17d4/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/cam-2018",
 		"description": "Alice, an ambitious camgirl, wakes up one day to discover she's been replaced on her show with an exact replica of herself."
+	},
+	{
+		"title": "Velvet Buzzsaw",
+		"year": "2019",
+		"genres": ["Horror", "Thriller", "Satire", "Mystery", "Supernatural"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/b0245209-e11e-4a17-b373-3559e27c4c6e/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/velvet-buzzsaw-2019",
+		"description": "A thriller about the contemporary art scene of Los Angeles, where big money artists and mega-collectors pay a high price when art collides with commerce."
 	},
 	{
 		"title": "South Park: Bigger, Longer & Uncut",
@@ -710,9 +830,29 @@
 		"description": "Three friends are on the verge of getting their video game financed when their benefactor is taken hostage by terrorists."
 	},
 	{
+		"title": "Paul",
+		"year": "2011",
+		"genres": ["Comedy", "Science-Fiction", "Adventure", "Alien"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/ce8de4ec-b820-4892-9484-7e7127c352e6/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/paul-2011",
+		"description": "Two English comic book geeks traveling across the U.S. encounter an alien outside Area 51."
+	},
+	{
+		"title": "Palm Springs",
+		"year": "2020",
+		"genres": ["Comedy", "Romance", "Science-Fiction", "Time Loop"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/4889a332-6c19-475f-aed0-ee70e8bb232d/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/palm-springs-2020",
+		"description": "Nyles and Sarah find themselves stuck in a time loop and living the same day over and over again. They are drawn to each other but certain revelations threaten their budding romance."
+	},
+	{
 		"title": "Crazy Rich Asians",
 		"year": "2018",
-		"genres": ["Romantic Comedy", "Comedy", "Drama"],
+		"genres": ["Romance", "Comedy", "Drama"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/c49cc5f4-a7ab-434d-aacc-1fc353f8924a/poster-500.webp",
@@ -878,26 +1018,6 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/87580f98-5705-433b-bc65-aedd2d84565a/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/a-quiet-place-day-one-2024",
 		"description": "A young woman named Sam finds herself trapped in New York City during the early stages of an invasion by alien creatures with ultra-sensitive hearing."
-	},
-	{
-		"title": "Abigail",
-		"year": "2019",
-		"genres": ["Fantasy", "Adventure", "Science-Fiction", "Supernatural"],
-		"originalLanguage": "Russian",
-		"dubbedInEnglish": "yes",
-		"imageUrl": "https://img.rgstatic.com/content/movie/f98d6646-84db-48ca-af8b-086f50974724/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/abigail-2019-1",
-		"description": "Abigail lives in a city whose borders were closed because of an epidemic and Abby's father was one of the sick. Going against the authorities to find her father, Abby learns that her city is actually full of magic."
-	},
-	{
-		"title": "Hero",
-		"year": "2019",
-		"genres": ["Action", "Drama", "Thriller"],
-		"originalLanguage": "Russian",
-		"dubbedInEnglish": "yes",
-		"imageUrl": "https://img.rgstatic.com/content/movie/b6f6d6fe-96f3-4c4b-972f-2c1ebb663b75/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/hero-2019-1",
-		"description": "15 years ago, Andrei, under the guidance of his father, Colonel Rodina, was trained in a secret special school, where agents of the Foreign Intelligence Service were trained from teenagers. When the pilot project was closed, Andrei 'burned the bridges', remained in Europe and tried not to recall the past. But one day his father calls, whom everyone considered dead. He reports that hunting is open for Andrei, but who decided to destroy him is unknown. Fleeing, he finds Masha, with whom he studied at a special school. Andrei will have to go through love and betrayal and learn about the true scale of the ruthless espionage game, into which he was involuntarily involved."
 	},
 	{
 		"title": "The Tomorrow War",
@@ -1169,7 +1289,7 @@
 	{
 		"title": "Asteroid City",
 		"year": "2023",
-		"genres": ["Comedy", "Drama", "Alien Invasion"],
+		"genres": ["Comedy", "Drama", "Alien"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/9706ffd8-8462-40d8-a976-049bb7ba7be4/poster-500.webp",
@@ -1255,66 +1375,6 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/894b8803-63ac-455e-9cc5-380a8cdf1a55/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/only-god-forgives-2013",
 		"description": "Julian, a drug-smuggler thriving in Bangkok's criminal underworld, sees his life get even more complicated when his mother compels him to find and kill whoever is responsible for his brother's recent death."
-	},
-	{
-		"title": "The Guardians",
-		"year": "2017",
-		"genres": ["Action", "Fantasy", "Superhero"],
-		"originalLanguage": "Russian",
-		"dubbedInEnglish": "yes",
-		"imageUrl": "https://img.rgstatic.com/content/movie/72942844-a301-4e9d-b9ab-d149c4d57a10/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/guardians-2017",
-		"description": "During the Cold War, an organization called 'Patriot' created a super-hero squad, which includes members of multiple Soviet republics. For years, the heroes had to hide their identities, but in hard times they must show themselves again."
-	},
-	{
-		"title": "Jeruzalem",
-		"year": "2016",
-		"genres": ["Horror", "Thriller", "Fantasy", "Supernatural"],
-		"originalLanguage": "English",
-		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/096401ef-39d9-439a-8a37-ad11cf32e80d/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/jeruzalem-2016",
-		"description": "When a couple of American young adults fly to Israel to visit the city of Jerusalem, a biblical nightmare falls upon them."
-	},
-	{
-		"title": "Super Me",
-		"year": "2021",
-		"genres": ["Fantasy", "Thriller", "Supernatural"],
-		"originalLanguage": "Mandarin",
-		"dubbedInEnglish": "yes",
-		"imageUrl": "https://img.rgstatic.com/content/movie/8f719dbe-a103-4387-ab83-a54d89699798/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/super-me-2021",
-		"description": "A young scriptwriter starts bringing valuable objects back from his short nightmares of being chased by a demon. Selling them makes him rich."
-	},
-	{
-		"title": "Black Hollow Cage",
-		"year": "2017",
-		"genres": ["Drama", "Thriller", "Science-Fiction"],
-		"originalLanguage": "English",
-		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/a85f4a53-3e4b-4f4b-a804-12d079c770d5/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/black-hollow-cage-2017",
-		"description": "A girl who lives secluded in a house in the woods with the only company of her father and a wolfhound finds among the trees a mysterious cubic device."
-	},
-	{
-		"title": "The Blackout",
-		"year": "2019",
-		"genres": ["Science-Fiction", "Thriller", "Alien Invasion"],
-		"originalLanguage": "Russian",
-		"dubbedInEnglish": "yes",
-		"imageUrl": "https://img.rgstatic.com/content/movie/b87e45bc-b15f-43d8-98b7-d4c14124032e/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/the-blackout-2019",
-		"description": "Life on Earth is rapidly destroyed except for a small area in Eastern Europe."
-	},
-	{
-		"title": "Deep",
-		"year": "2021",
-		"genres": ["Thriller", "Horror", "Science-Fiction"],
-		"originalLanguage": "Thai",
-		"dubbedInEnglish": "yes",
-		"imageUrl": "https://img.rgstatic.com/content/movie/19f497ab-881e-4527-9a77-9554e0e47a37/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/deep-2021",
-		"description": "Four insomniac med school students are lured into a neuroscience experiment that spirals out of control and must find a way out before it's too late."
 	},
 	{
 		"title": "As Above, So Below",
