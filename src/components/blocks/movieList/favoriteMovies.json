@@ -792,7 +792,7 @@
 	{
 		"title": "South Park: Bigger, Longer & Uncut",
 		"year": "1999",
-		"genre": ["Animation", "Comedy", "Musical", "Satire"],
+		"genres": ["Animation", "Comedy", "Musical", "Satire"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/5f76051f-8e20-4bfd-9ffd-4597abb03af4/poster-500.webp",
@@ -802,7 +802,7 @@
 	{
 		"title": "BASEketball",
 		"year": "1998",
-		"genre": ["Comedy", "Sports", "Satire"],
+		"genres": ["Comedy", "Sports", "Satire"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/51306430-88a5-499f-af25-7c11c58c17e1/poster-500.webp",
@@ -812,7 +812,7 @@
 	{
 		"title": "Cannibal! The Musical",
 		"year": "1993",
-		"genre": ["Comedy", "Musical", "Adventure", "Dark Comedy", "Satire"],
+		"genres": ["Comedy", "Musical", "Adventure", "Dark Comedy", "Satire"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/8dfae418-c3a8-4c28-a20f-253500ee27e9/poster-500.webp",
@@ -822,7 +822,7 @@
 	{
 		"title": "Game Over, Man!",
 		"year": "2018",
-		"genre": ["Action", "Comedy", "Thriller"],
+		"genres": ["Action", "Comedy", "Thriller"],
 		"originalLanguage": "English",
 		"dubbedInEnglish": "N/A",
 		"imageUrl": "https://img.rgstatic.com/content/movie/d9fe5ae9-8478-42d6-8698-50af2b709c8b/poster-500.webp",
