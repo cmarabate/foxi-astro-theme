@@ -45,7 +45,7 @@ const savedNavActions = navActions.map((action) => ({
 			</a>
 
 			<!-- Menu toggle -->
-			<button
+			<!-- <button
 				id="header-toggle"
 				class="header__toggle"
 				aria-expanded="false"
@@ -56,7 +56,7 @@ const savedNavActions = navActions.map((action) => ({
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 				</div>
-			</button>
+			</button> -->
 
 			<!-- Navigation links -->
 			<!-- <ul role="menubar" aria-label="Select page" class="header__menu">
@@ -177,5 +177,26 @@ const savedNavActions = navActions.map((action) => ({
 	}
 	.header__actions {
 		@apply fixed bottom-0 left-0 hidden w-full items-center justify-between gap-4 border-t border-neutral-100 bg-white px-6 py-4 lg:relative lg:ml-auto lg:flex lg:w-auto lg:border-none lg:bg-transparent lg:px-0 lg:py-0 dark:border-neutral-800 dark:bg-neutral-950 lg:dark:bg-transparent [.header\_\_menu--open~&]:flex;
+	}
+
+	@media (max-width: 450px) {
+		body > header > div > nav > a > span {
+			font-size: 1.2rem;
+		}
+	}
+	@media (max-width: 400px) {
+		body > header > div > nav > a > span {
+			font-size: 1rem;
+		}
+	}
+	@media (max-width: 360px) {
+		body > header > div > nav > a > span {
+			font-size: 0.8rem;
+		}
+	}
+	@media (max-width: 330px) {
+		body > header > div > nav > a > span {
+			font-size: 0.6rem;
+		}
 	}
 </style>
