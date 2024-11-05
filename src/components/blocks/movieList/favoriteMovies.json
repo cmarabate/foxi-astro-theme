@@ -1,5 +1,15 @@
 [
 	{
+		"title": "Carter",
+		"year": "2022",
+		"genres": ["Action", "Thriller", "Adventure", "Apocalyptic"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/a822e8b2-2fb8-4765-a6ba-464c95a8714d/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/carter-2022",
+		"description": "Thrown straight into a dangerous mission with none of his memories intact, a man must escape death while trying to figure out who he is, how he ended up here, and who is the mysterious voice in his ear calling him 'Carter'?"
+	},
+	{
 		"title": "Space Sweepers",
 		"year": "2021",
 		"genres": ["Science-Fiction", "Action", "Adventure", "Drama", "Fantasy"],
@@ -118,6 +128,16 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/bba255db-c019-4f47-87b6-ffda0f2ab448/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/the-villainess-2017",
 		"description": "A female assassin leaves a trail of bodies behind her as she seeks revenge."
+	},
+	{
+		"title": "Atomic Blonde",
+		"year": "2017",
+		"genres": ["Action", "Thriller", "Spy", "Mystery"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/5535f175-ca0c-4f8d-af6d-89e9bfe129ff/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/atomic-blonde-2017",
+		"description": "An undercover MI6 agent is sent to Berlin during the Cold War to investigate the murder of a fellow agent and recover a missing list of double agents."
 	},
 	{
 		"title": "Badland Hunters",
@@ -428,6 +448,16 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/41202aae-3aa0-4e68-9670-a2da6e2482ae/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/the-wolf-of-wall-street-2013",
 		"description": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government."
+	},
+	{
+		"title": "Blood Red Sky",
+		"year": "2021",
+		"genres": ["Horror", "Thriller", "Action", "Supernatural", "Vampire", "Airplane"],
+		"originalLanguage": "German",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/b1a55e8f-9eb9-4231-aa4d-4c7a943479b0/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/blood-red-sky",
+		"description": "A woman with a mysterious illness is forced into action when a group of terrorists attempt to hijack a transatlantic overnight flight."
 	},
 	{
 		"title": "Deadpool",
