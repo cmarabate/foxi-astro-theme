@@ -240,6 +240,26 @@
 		"description": "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led."
 	},
 	{
+		"title": "Canary Black",
+		"year": "2024",
+		"genres": ["Action", "Thriller", "Spy"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/c140b909-b679-45dc-adea-97769c34702e/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/canary-black-2024",
+		"description": "It follows Avery Graves as she is blackmailed by terrorists into betraying her own country to save her kidnapped husband."
+	},
+	{
+		"title": "Believer",
+		"year": "2018",
+		"genres": ["Action", "Crime", "Thriller", "Drama"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/5cb5f171-7fab-4af0-9237-a8955b9f6b3f/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/believer-2018",
+		"description": "A police detective determined to catch the unseen boss of Asia's biggest drug cartel joins hands with a revenge-thirsty member of the gang."
+	},
+	{
 		"title": "Serenity",
 		"year": "2005",
 		"genres": ["Science-Fiction", "Adventure", "Action", "Thriller"],
@@ -818,6 +838,16 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/b0245209-e11e-4a17-b373-3559e27c4c6e/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/velvet-buzzsaw-2019",
 		"description": "A thriller about the contemporary art scene of Los Angeles, where big money artists and mega-collectors pay a high price when art collides with commerce."
+	},
+	{
+		"title": "Sting",
+		"year": "2024",
+		"genres": ["Horror", "Creature Feature", "Thriller"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/b5b0863d-a26b-4fe8-ab5e-2cd774f155f1/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/sting-2024",
+		"description": "After raising an unnervingly talented spider in secret, 12-year-old Charlotte must face the facts about her pet-and fight for her family's survival-when the once-charming creature rapidly transforms into a giant, flesh-eating monster."
 	},
 	{
 		"title": "South Park: Bigger, Longer & Uncut",
