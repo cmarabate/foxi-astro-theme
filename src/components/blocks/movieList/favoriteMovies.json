@@ -130,16 +130,6 @@
 		"description": "A female assassin leaves a trail of bodies behind her as she seeks revenge."
 	},
 	{
-		"title": "Atomic Blonde",
-		"year": "2017",
-		"genres": ["Action", "Thriller", "Spy", "Mystery"],
-		"originalLanguage": "English",
-		"dubbedInEnglish": "N/A",
-		"imageUrl": "https://img.rgstatic.com/content/movie/5535f175-ca0c-4f8d-af6d-89e9bfe129ff/poster-500.webp",
-		"pageUrl": "https://reelgood.com/movie/atomic-blonde-2017",
-		"description": "An undercover MI6 agent is sent to Berlin during the Cold War to investigate the murder of a fellow agent and recover a missing list of double agents."
-	},
-	{
 		"title": "Badland Hunters",
 		"year": "2024",
 		"genres": ["Action", "Adventure", "Horror", "Supernatural", "Apocalyptic"],
@@ -238,6 +228,46 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/ab21a0c4-3ea7-4a86-8ff2-1de121224271/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/everything-everywhere-all-at-once-2022",
 		"description": "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led."
+	},
+	{
+		"title": "Yaksha: Ruthless Operations",
+		"year": "2022",
+		"genres": ["Action", "Thriller", "Spy", "Crime"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/883468f6-b1f8-4615-8d5e-49d733d797c0/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/yaksha-ruthless-operations-2022",
+		"description": "Nicknamed after a human-devouring spirit, the ruthless leader of an overseas black ops team takes up a dangerous mission in a city riddled with spies."
+	},
+	{
+		"title": "Seoul Vibe",
+		"year": "2022",
+		"genres": ["Action", "Crime", "Adventure", "Comedy"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/4155c240-3b0f-4a2f-bfcc-2b9695dfc64b/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/seoul-vibe-2022",
+		"description": "The drivers of the Sanggye-dong Supreme Team become mired in the slush fund investigation of a powerful person on the very day of the 1988 Seoul Olympics opening ceremony."
+	},
+	{
+		"title": "Mission: Cross",
+		"year": "2024",
+		"genres": ["Action", "Thriller", "Spy", "Adventure"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/e79df7c4-eed2-4921-b3e8-cd0767112df8/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/mission-cross-2024",
+		"description": "In the ultimate test of marriage, an agent-turned-househusband gets tangled in a perilous mission with his detective wife, who's clueless about his past."
+	},
+	{
+		"title": "Atomic Blonde",
+		"year": "2017",
+		"genres": ["Action", "Thriller", "Spy", "Mystery"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/5535f175-ca0c-4f8d-af6d-89e9bfe129ff/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/atomic-blonde-2017",
+		"description": "An undercover MI6 agent is sent to Berlin during the Cold War to investigate the murder of a fellow agent and recover a missing list of double agents."
 	},
 	{
 		"title": "Canary Black",
@@ -838,6 +868,36 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/b0245209-e11e-4a17-b373-3559e27c4c6e/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/velvet-buzzsaw-2019",
 		"description": "A thriller about the contemporary art scene of Los Angeles, where big money artists and mega-collectors pay a high price when art collides with commerce."
+	},
+	{
+		"title": "Emergency Declaration",
+		"year": "2022",
+		"genres": ["Thriller", "Disaster", "Drama", "Action", "Airplane", "Viral Outbreak"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/8130fffd-1891-4ed0-9aec-52046c375f7d/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/emergency-declaration-2022",
+		"description": "After a terror incident occurs mid-flight, a passenger jet declares an emergency."
+	},
+	{
+		"title": "Fear Street: Part One - 1994",
+		"year": "2021",
+		"genres": ["Horror", "Slasher", "Supernatural", "Mystery", "Thriller"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/8be50b3a-9082-4646-b13b-a593969cdaf8/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/fear-street-1994-2021",
+		"description": "A circle of teenage friends accidentally encounter the ancient evil responsible for a series of brutal murders that have plagued their town for over 300 years. Welcome to Shadyside."
+	},
+	{
+		"title": "Fear Street: Part Two - 1978",
+		"year": "2021",
+		"genres": ["Horror", "Slasher", "Supernatural", "Mystery", "Thriller"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/ec5d270a-b76c-472d-9ae2-4eea35036a32/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/fear-street-1978-2021",
+		"description": "Shadyside, 1978. School's out for summer and the activities at Camp Nightwing are about to begin. But when another Shadysider is possessed with the urge to kill, the fun in the sun becomes a gruesome fight for survival."
 	},
 	{
 		"title": "Sting",
