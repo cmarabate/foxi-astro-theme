@@ -480,6 +480,16 @@
 		"description": "2038: George Almore is working on a true human-equivalent AI. His latest prototype is almost ready. This sensitive phase is also the riskiest. Especially as he has a goal that must be hidden at all costs."
 	},
 	{
+		"title": "Special ID",
+		"year": "2013",
+		"genres": ["Action", "Crime", "Martial Arts", "Thriller"],
+		"originalLanguage": "Chinese",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/c2fcd083-36ff-40a4-b43a-14f54d63141c/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/special-id-2013",
+		"description": "A cop goes undercover in a ruthless underworld organization to stop a gang leader, only to put himself in great danger after being exposed by his former protégé and best friend."
+	},
+	{
 		"title": "Limitless",
 		"year": "2011",
 		"genres": ["Thriller", "Science-Fiction", "Action"],
@@ -880,6 +890,16 @@
 		"description": "After a terror incident occurs mid-flight, a passenger jet declares an emergency."
 	},
 	{
+		"title": "Superdeep",
+		"year": "2020",
+		"genres": ["Horror", "Sci-Fi", "Thriller", "Viral Outbreak", "Mystery"],
+		"originalLanguage": "Russian",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/b05ffd82-dd15-44f7-ad74-d838fcbddf6a/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/the-superdeep-2020",
+		"description": "A small research team went down below the surface to find out what secret the world's deepest borehole was hiding. What they have found turned out to be the greatest threat in history. And the future of humanity is in their hands."
+	},
+	{
 		"title": "Fear Street: Part One - 1994",
 		"year": "2021",
 		"genres": ["Horror", "Slasher", "Supernatural", "Mystery", "Thriller"],
@@ -898,6 +918,16 @@
 		"imageUrl": "https://img.rgstatic.com/content/movie/ec5d270a-b76c-472d-9ae2-4eea35036a32/poster-500.webp",
 		"pageUrl": "https://reelgood.com/movie/fear-street-1978-2021",
 		"description": "Shadyside, 1978. School's out for summer and the activities at Camp Nightwing are about to begin. But when another Shadysider is possessed with the urge to kill, the fun in the sun becomes a gruesome fight for survival."
+	},
+	{
+		"title": "Fear Street: Part Three - 1666",
+		"year": "2021",
+		"genres": ["Horror", "Slasher", "Supernatural", "Mystery", "Thriller"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/fc2aa90e-504f-4cd7-b0e6-acb77a74b15a/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/fear-street-1666-2021",
+		"description": "The origins of Sarah Fier's curse are finally revealed as history comes full circle on a night that changes the lives of Shadysiders forever."
 	},
 	{
 		"title": "Sting",
