@@ -250,6 +250,26 @@
 		"description": "The drivers of the Sanggye-dong Supreme Team become mired in the slush fund investigation of a powerful person on the very day of the 1988 Seoul Olympics opening ceremony."
 	},
 	{
+		"title": "Time to Hunt",
+		"year": "2019",
+		"genres": ["Thriller", "Crime", "Drama", "Action", "Dystopian"],
+		"originalLanguage": "Korean",
+		"dubbedInEnglish": "yes",
+		"imageUrl": "https://img.rgstatic.com/content/movie/a543c389-32fe-46ae-bf29-f7a614964d82/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/hunting-time-2019",
+		"description": "In the near future, a financial crisis will hit Korea and slums arise. From those areas, a group of young people commit crime to survive."
+	},
+	{
+		"title": "Haywire",
+		"year": "2012",
+		"genres": ["Action", "Thriller", "Spy", "Drama"],
+		"originalLanguage": "English",
+		"dubbedInEnglish": "N/A",
+		"imageUrl": "https://img.rgstatic.com/content/movie/72c3da2e-3b3f-49be-95a8-1f7152edf4c9/poster-500.webp",
+		"pageUrl": "https://reelgood.com/movie/haywire-2012",
+		"description": "A black ops super soldier seeks payback after she is betrayed and set up during a mission."
+	},
+	{
 		"title": "Mission: Cross",
 		"year": "2024",
 		"genres": ["Action", "Thriller", "Spy", "Adventure"],
