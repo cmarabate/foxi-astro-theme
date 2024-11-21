@@ -18,7 +18,7 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 		<Col span="2" />
 		<Col span="8" align="center">
 			<h1>My <strong>Favorite Movies</strong> Ranked</h1>
-			<p class="adaptiveColor mb-0 pb-0 text-lg">Filter by Genre(s)</p>
+			<p class="adaptiveColor mb-0 pb-0 text-lg font-bold">Filter by Genre(s)</p>
 			<p class="pb-0 text-sm">
 				(When multiple genres are selected it will only show movies with all of the selected genres)
 			</p>
@@ -45,7 +45,7 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 			</div>
 
 			<div class="otherFilters pt-5">
-				<p class="adaptiveColor mb-0 pb-0 text-lg">Other Filters</p>
+				<p class="adaptiveColor mb-0 pb-0 text-lg font-bold">Other Filters</p>
 				{
 					hasDubbedMovies && (
 						<div class="filter-section">
@@ -72,13 +72,25 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 				}
 			</div>
 
+			<div class="search-box">
+				<label for="searchInput" class="filter-label">Search Movies:</label>
+				<input
+					type="text"
+					id="searchInput"
+					placeholder="Type to filter by title..."
+					class="search-input"
+				/>
+			</div>
+
+			<button id="resetFilters" class="btn-reset mt-5">Reset All Filters</button>
+
 			{/* Results Count */}
 			<div class="results-count mb-5 mt-5">
 				Showing {moviesData.length}
 				{moviesData.length === 1 ? 'result' : 'results'}
 			</div>
 
-			<p class="adaptiveColor mb-0 mt-5 pb-0 text-lg">Starting with the best...</p>
+			<p class="adaptiveColor mb-0 mt-5 pb-0 text-lg font-bold">Starting with the best...</p>
 			<div class="movie-grid">
 				{
 					moviesData.map((movie, index) => (
@@ -118,6 +130,7 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 			const genreCheckboxes = document.querySelectorAll('.genre-checkbox')
 			const languageFilter = document.getElementById('languageFilter')
 			const dubbedFilter = document.getElementById('dubbedFilter')
+			const searchInput = document.getElementById('searchInput')
 			const resultsCount = document.querySelector('.results-count')
 
 			const filterMovies = () => {
@@ -126,6 +139,7 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 					.map((checkbox) => (checkbox as HTMLInputElement).value)
 				const selectedLanguage = languageFilter ? (languageFilter as HTMLSelectElement).value : ''
 				const selectedDubbed = dubbedFilter ? (dubbedFilter as HTMLSelectElement).value : ''
+				const searchTerm = searchInput ? (searchInput as HTMLInputElement).value.toLowerCase() : ''
 
 				let visibleCount = 0
 
@@ -136,14 +150,17 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 					const movieGenres = movieWrapper.getAttribute('data-genres')?.split(', ') || []
 					const movieLanguage = movieWrapper.getAttribute('data-language')
 					const movieDubbed = movieWrapper.getAttribute('data-dubbed')
+					const movieTitleElement = card.querySelector('.movie-title')
+					const movieTitle = movieTitleElement?.textContent?.toLowerCase() || ''
 
 					const matchesGenres =
 						selectedGenres.length === 0 ||
 						selectedGenres.every((genre) => movieGenres.includes(genre))
 					const matchesLanguage = !selectedLanguage || movieLanguage === selectedLanguage
 					const matchesDubbed = !selectedDubbed || movieDubbed === selectedDubbed
+					const matchesSearchTerm = movieTitle.includes(searchTerm)
 
-					const isVisible = matchesGenres && matchesLanguage && matchesDubbed
+					const isVisible = matchesGenres && matchesLanguage && matchesDubbed && matchesSearchTerm
 					movieWrapper.style.display = isVisible ? 'block' : 'none'
 
 					if (isVisible) visibleCount++
@@ -155,10 +172,11 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 				}
 			}
 
-			// Event listeners for genre checkboxes, language, and dubbed filters
+			// Event listeners for genre checkboxes, language, dubbed filters, and search input
 			genreCheckboxes.forEach((checkbox) => checkbox.addEventListener('change', filterMovies))
 			if (languageFilter) languageFilter.addEventListener('change', filterMovies)
 			if (dubbedFilter) dubbedFilter.addEventListener('change', filterMovies)
+			if (searchInput) searchInput.addEventListener('input', filterMovies)
 
 			// Expand/collapse functionality for long movie descriptions
 			const expandButtons = document.querySelectorAll('.expand-button')
@@ -198,6 +216,25 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 					}
 				}
 			})
+
+			const resetFiltersButton = document.getElementById('resetFilters')
+			if (resetFiltersButton) {
+				resetFiltersButton.addEventListener('click', () => {
+					genreCheckboxes.forEach((checkbox) => ((checkbox as HTMLInputElement).checked = false))
+					if (languageFilter) {
+						;(languageFilter as HTMLSelectElement).value = ''
+					}
+					if (dubbedFilter) {
+						;(dubbedFilter as HTMLSelectElement).value = ''
+					}
+					if (searchInput) {
+						;(searchInput as HTMLSelectElement).value = ''
+					}
+
+					filterMovies()
+				})
+			}
+			filterMovies() // Reapply the filter to show all movies
 		})
 	</script>
 </Section>
@@ -224,6 +261,17 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 		padding: 15px;
 		position: relative;
 		transition: max-height 0.3s ease;
+	}
+
+	@media (max-width: 768px) {
+		.movie-grid {
+			flex-direction: column;
+			align-items: center;
+		}
+		.movie-card {
+			width: 90%;
+			margin-bottom: 20px;
+		}
 	}
 
 	.movie-card.expanded {
@@ -349,5 +397,22 @@ const hasDubbedMovies = moviesData.some((movie) => movie.dubbedInEnglish === 'ye
 
 	.adaptiveColor {
 		color: #e2187d;
+	}
+
+	.btn-reset {
+		background: #e2187d;
+		padding: 2px 5px 4px;
+		color: white;
+	}
+
+	.btn-reset:hover {
+		background: #fc5fad;
+		padding: 2px 5px 4px;
+		color: white;
+	}
+
+	#searchInput {
+		padding: 2px 4px;
+		margin-top: 15px;
 	}
 </style>
