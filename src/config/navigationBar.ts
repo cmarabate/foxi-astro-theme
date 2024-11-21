@@ -38,7 +38,7 @@ export const navigationBarData: NavData = {
 		text: 'movies.cmarabate.com'
 	},
 	navItems: [
-		{ name: 'Home', link: '/' },
+		/* { name: 'Home', link: '/' },
 		{ name: 'Pricing', link: '/pricing' },
 		{ name: 'Features', link: '/features' },
 		{
@@ -50,8 +50,8 @@ export const navigationBarData: NavData = {
 				{ name: 'FAQ', link: '/faq' },
 				{ name: 'Terms', link: '/terms' }
 			]
-		},
-		{ name: 'Contact', link: '/contact' }
+		}, */
+		{ name: 'Movie Night', link: 'https://movienight.cmarabate.com' }
 	],
 	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
 }
